@@ -1,0 +1,15 @@
+{
+  "name": "remote-auth",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Auth micro-frontend (:5001). Owns session/identity: exposes a full Login page AND a small AuthStatus widget that the Host Shell federates into its topbar — page-level and widget-level federation from the same remote.",
+  "scripts": {
+    "start": "webpack serve --mode development",
+    "build": "webpack --mode production"
+  },
+  "dependencies": {
+    "@nimbus/shared-ui": "*",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  }
+}

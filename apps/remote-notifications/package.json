@@ -1,0 +1,15 @@
+{
+  "name": "remote-notifications",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Notifications micro-frontend (:5005). Owns the alert stream, keeps its own unread state, and tells the Host Shell about it by dispatching a plain window CustomEvent (nimbus:unread-count) — no shared store, no prop drilling across the federation boundary.",
+  "scripts": {
+    "start": "webpack serve --mode development",
+    "build": "webpack --mode production"
+  },
+  "dependencies": {
+    "@nimbus/shared-ui": "*",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  }
+}

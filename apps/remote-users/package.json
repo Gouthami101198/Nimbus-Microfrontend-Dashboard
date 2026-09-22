@@ -1,0 +1,15 @@
+{
+  "name": "remote-users",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Users micro-frontend (:5003). Owns identity/access UI and exposes the User Management page.",
+  "scripts": {
+    "start": "webpack serve --mode development",
+    "build": "webpack --mode production"
+  },
+  "dependencies": {
+    "@nimbus/shared-ui": "*",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "name": "host-shell",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Host Shell (:5000). Owns the sidebar, topbar and routing, and federates in the Dashboard, Users, Analytics and Notifications pages plus the Auth widget at runtime from their own independently-running dev servers.",
+  "scripts": {
+    "start": "webpack serve --mode development",
+    "build": "webpack --mode production"
+  },
+  "dependencies": {
+    "@nimbus/shared-ui": "*",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  }
+}
