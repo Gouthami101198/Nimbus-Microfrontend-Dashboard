@@ -1,0 +1,30 @@
+{
+  "name": "nimbus-mfe",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "concurrently -k -n auth,dashboard,users,analytics,notif,host -c blue,green,yellow,magenta,cyan,red \"npm run start -w remote-auth\" \"npm run start -w remote-dashboard\" \"npm run start -w remote-users\" \"npm run start -w remote-analytics\" \"npm run start -w remote-notifications\" \"npm run start -w host-shell\"",
+    "build": "npm run build -w remote-auth && npm run build -w remote-dashboard && npm run build -w remote-users && npm run build -w remote-analytics && npm run build -w remote-notifications && npm run build -w host-shell"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.25.2",
+    "@babel/preset-env": "^7.25.4",
+    "@babel/preset-react": "^7.24.7",
+    "babel-loader": "^9.2.1",
+    "concurrently": "^8.2.2",
+    "css-loader": "^7.1.2",
+    "html-webpack-plugin": "^5.6.0",
+    "style-loader": "^4.0.0",
+    "webpack": "^5.94.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^6.0.0"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "uuid": "^14.0.2"
+  }
+}
