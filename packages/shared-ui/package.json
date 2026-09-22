@@ -1,0 +1,10 @@
+{
+  "name": "@nimbus/shared-ui",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Design tokens, icon set and small primitives shared by every Nimbus micro-frontend. In a real org this would be published to a private npm registry and version-pinned by each remote; here it's a workspace package so the whole thing runs locally with one `npm install`.",
+  "main": "src/index.js",
+  "peerDependencies": {
+    "react": "^18.3.1"
+  }
+}
